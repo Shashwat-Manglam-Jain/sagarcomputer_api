@@ -44,7 +44,7 @@ const sendVerificationToken = (email, verificationToken) => {
       from: "shashwat100k@gmail.com",
       to: email,
       subject: "Email Verification ✔",
-      text: `Please click the following link to verify your email: http://localhost:${Port}/verify/${verificationToken}`,
+      text: `Please click the following link to verify your email: https://sagarcomputer-api.onrender.com/verify/${verificationToken}`,
     });
 
     console.log("Message sent: %s", info.messageId);
